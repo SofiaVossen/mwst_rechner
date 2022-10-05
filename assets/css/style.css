@@ -1,81 +1,55 @@
 *{
-    font-family: Karla;
     margin: 0;
     padding:0;
     box-sizing: border-box;
 }
+/* body header main */
 body{
-    margin-left: 10%;
-    margin-right: 10%;
-    color:#323A45;
+    margin-top:10vh;
+    font-family: Arial, Helvetica, sans-serif;
 }
-/* ===nav=========================================== */
-/* ================================================= */
-.topnav{
+header{
+    width:50vw;
+    margin-left:20vw;
+}
+main{
+    border: solid black 1px;
+    border-radius: 5px;;
+    width:50vw;
+    margin-left:20vw;
+}
+
+/* <!-- =========================================================EINGABE --> */
+article{
     display: flex;
-    flex-direction: row ;
-    justify-content: flex-end;
-    overflow:hidden;
-    margin:5%;
+    flex-flow: column wrap;
+    border:solid white 0.5vh;
+    border-radius: 5px;
+    background-color:aliceblue;
+    height: 12vh;
+    justify-content: center;
 }
-nav h1{
-    margin-right: auto;
-}
-nav h1:hover{
-    color:#848484;
+input{
     cursor:pointer;
 }
-nav p{
-    margin-left:5%;
+label,p,h2,h1{
+    cursor:default;
 }
-nav p:hover{
-    color:#848484;
-    cursor:pointer;
+
+#nettoBetrag, #bruttoBetrag{
+    width:10vw;
+    height:4vh;
+    border-radius: 5px;
 }
-/* ===main=========================================*/
-/* ================================================= */
-.container3Pic{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    gap:1rem;
+#submit{
+    height:4vh;
+    background-color:rgb(95, 171, 237);
+    border-radius: 5px;;
+    color:white;
+    border: none;
+    cursor: pointer;
 }
-.item{
-    flex:1;
-}
-img{
-    width:100%;
-}
-a img:hover{
-    opacity: 0.5;
-}
-main section p{
-    color:#848484;
-}
-ul{
-    display: flex;
-    flex-flow:row wrap;
-    justify-content: space-between;
-    list-style: none;
-}
-section{
-    margin-bottom:5%;
-}
-/* ===footer=========================================*/
-/* ================================================= */
-.footer1{
-    display: flex;
-    flex-flow:row wrap;
-    justify-content: space-between;
-    margin-bottom: 10px;
-}
-.footer1 article h2{
-    margin-bottom:10px;
-}
-.footer2{
-    color:#848484;
-}
-.footer{
-    display:flex;
-    flex-flow:column wrap;
+/* <!-- =========================================================ERGEBNISSE --> */
+#mwstErgebnis, #bruttoErgebnis, #nettoErgebnis{
+    color:rgb(95, 171, 237);
 }
